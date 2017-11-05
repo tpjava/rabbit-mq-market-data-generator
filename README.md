@@ -22,7 +22,9 @@ Simply with docker running, run command:
 
 docker pull rabbitmq
 
-This will now appear in your docker images, check by running docker images.
+This will now appear in your docker images, check by running command: 
+
+docker images
 
 To run the image use:
 
