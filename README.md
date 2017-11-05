@@ -10,7 +10,7 @@ Run with
 
 mvn exec:java -Dexec.args="ERICSSON VODAFONE ASTRA BT"
 
-where exec.args is a list of stocks you want to create channels and prices for
+where exec.args is a list of stocks separated by spaces that you want to create channels and prices for
 
 The receiver program can then subscribe to one or many of these channes to receive the prices.
 
