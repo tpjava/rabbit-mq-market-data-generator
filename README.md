@@ -14,13 +14,17 @@ where exec.args is a list of stocks separated by spaces that you want to create 
 
 The receiver program can then subscribe to one or many of these channes to receive the prices.
 
+https://github.com/tpjava/rabbit-mq-market-data-receiver
+
 You will need to have a rabbit-mq broker running to facilitate all messaging.  The easiest way to do this is using Docker.
 
 Simply with docker running, run command:
 
 docker pull rabbitmq
 
-This will now appear in your docker images, check by running docker images.
+This will now appear in your docker images, check by running command: 
+
+docker images
 
 To run the image use:
 
