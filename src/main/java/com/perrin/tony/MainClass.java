@@ -14,7 +14,8 @@ import java.util.stream.Stream;
  */
 public class MainClass {
     private static final Random random = new Random();
-    private static final String HOST = "localhost";
+    private static final String HOST = "ec2-xx-xx-xx-xx.eu-west-2.compute.amazonaws.com";
+    private static final int PORT = 80;
 
     public static void main(String[] args) throws Exception {
         Connection connection = initMarketQuoter();
@@ -26,6 +27,7 @@ public class MainClass {
     private static Connection initMarketQuoter() throws IOException, TimeoutException {
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost(HOST);
+        factory.setPort(PORT);
         return factory.newConnection();
     }
 
